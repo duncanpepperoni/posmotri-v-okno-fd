@@ -16,6 +16,9 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -50,12 +53,6 @@ ol {
   background-color: #d9d9d9;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
@@ -73,6 +70,7 @@ ol {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .search-form {
@@ -95,6 +93,7 @@ ol {
 .content__list-container {
   height: 298px;
   overflow: auto;
+  position: relative;
 }
 
 .result__video {
@@ -204,6 +203,7 @@ ol {
 
 .search-form__submit-button {
   width: 194px;
+  align-self: flex-end;
 }
 
 .search-form__label {
@@ -267,10 +267,6 @@ ol {
   outline: #fff 1px solid;
 }
 
-.search-form__submit-button {
-  align-self: flex-end;
-}
-
 .more-button {
   width: 393px;
   margin-top: 30px;
@@ -299,14 +295,6 @@ ol {
 
 .content__list-item:focus-visible {
   outline: #fff 1px solid;
-}
-
-.result__video-container {
-  position: relative;
-}
-
-.content__list-container {
-  position: relative;
 }
 
 .search-form__label:focus {
